@@ -17,6 +17,7 @@ const Footer = () => {
                     alt="Cleanwave Logo"
                     className="h-7 w-auto max-w-[120px] object-contain"
                   />
+                  
               </div>
               <span className="text-2xl font-bold">Cleanwave</span>
             </div>
