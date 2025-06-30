@@ -77,16 +77,20 @@ const Hero = () => {
               </motion.a>
 
                 
-                <motion.button 
-                  className="btn-secondary px-8 py-4 rounded-xl text-black font-semibold flex items-center justify-center space-x-3 shadow-lg"
-                  whileHover={{ scale: 1.05, y: -2 }}
-                  whileTap={{ scale: 0.98 }}
-                >
-                  <Users className="w-5 h-5" />
-                  <span>Become an Agent</span>
-                </motion.button>
-              </div>
+              <motion.a
+                href="https://web.cleanwave.green/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary px-8 py-4 rounded-xl text-black font-semibold flex items-center justify-center space-x-3 shadow-lg no-underline"
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                <Users className="w-5 h-5" />
+                <span>Get Started</span>
+              </motion.a>
 
+              </div>
+{/* 
               <motion.button 
                 className="border-2 border-primary text-primary px-6 py-3 rounded-xl font-semibold hover:bg-primary hover:text-white transition-all duration-300 flex items-center space-x-2"
                 whileHover={{ scale: 1.05 }}
@@ -95,7 +99,7 @@ const Hero = () => {
                 <Play className="w-4 h-4" />
                 <span>Watch Demo</span>
                 <ArrowRight className="w-4 h-4" />
-              </motion.button>
+              </motion.button> */}
             </div>
           </LazySection>
 

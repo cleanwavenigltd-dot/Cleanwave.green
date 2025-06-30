@@ -91,13 +91,17 @@ const Header = () => {
             Download App
           </motion.a>
 
-            <motion.button 
-              className="btn-primary px-5 py-2.5 rounded-xl text-white font-medium shadow-sm"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Become Agent
-            </motion.button>
+          <motion.a 
+            href="https://web.cleanwave.green/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary px-5 py-2.5 rounded-xl text-white font-medium shadow-sm no-underline"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Get Started
+          </motion.a>
+
           </div>
 
           {/* Mobile menu button */}
@@ -164,18 +168,26 @@ const Header = () => {
                   </motion.div>
                 ))}
                 <div className="px-4 py-4 space-y-3">
-                  <motion.button 
-                    className="w-full btn-secondary px-4 py-3 rounded-lg text-black font-medium"
+                <motion.a
+                  href="https://play.google.com/store/apps/details?id=com.designer.dev23.clenwaveuser"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full btn-secondary px-4 py-3 rounded-lg text-black font-medium text-center block no-underline"
+                  whileTap={{ scale: 0.98 }}
+                >
+                  Download App
+                </motion.a>
+
+                  <motion.a 
+                    href="https://web.cleanwave.green/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full btn-primary px-4 py-3 rounded-lg text-white font-medium text-center block no-underline"
                     whileTap={{ scale: 0.98 }}
                   >
-                    Download App
-                  </motion.button>
-                  <motion.button 
-                    className="w-full btn-primary px-4 py-3 rounded-lg text-white font-medium"
-                    whileTap={{ scale: 0.98 }}
-                  >
-                    Become Agent
-                  </motion.button>
+                    Get Started
+                  </motion.a>
+
                 </div>
               </div>
             </motion.div>
