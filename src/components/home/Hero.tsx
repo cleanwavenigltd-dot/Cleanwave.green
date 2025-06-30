@@ -64,14 +64,18 @@ const Hero = () => {
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
-                <motion.button 
-                  className="btn-primary px-8 py-4 rounded-xl text-white font-semibold flex items-center justify-center space-x-3 shadow-lg"
-                  whileHover={{ scale: 1.05, y: -2 }}
-                  whileTap={{ scale: 0.98 }}
-                >
-                  <Smartphone className="w-5 h-5" />
-                  <span>Download App</span>
-                </motion.button>
+              <motion.a 
+                href="https://play.google.com/store/apps/details?id=com.designer.dev23.clenwaveuser"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary px-8 py-4 rounded-xl text-white font-semibold flex items-center justify-center space-x-3 shadow-lg no-underline"
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                <Smartphone className="w-5 h-5" />
+                <span>Download App</span>
+              </motion.a>
+
                 
                 <motion.button 
                   className="btn-secondary px-8 py-4 rounded-xl text-black font-semibold flex items-center justify-center space-x-3 shadow-lg"
@@ -127,12 +131,16 @@ const Hero = () => {
                   animate={{ y: [0, 10, 0] }}
                   transition={{ duration: 4, repeat: Infinity }}
                 >
-                  <div className="text-center">
-                    <div className="text-sm font-medium text-gray-600 mb-2">Scan to Download</div>
-                    <div className="w-16 h-16 bg-gray-100 rounded-lg flex items-center justify-center border">
-                      <span className="text-gray-400 text-xs">QR Code</span>
-                    </div>
+                <div className="text-center">
+                  <div className="text-sm font-medium text-gray-600 mb-2">Scan to Download</div>
+                  <div className="w-16 h-16 rounded-lg overflow-hidden border">
+                    <img
+                      src="/qr-download.png"
+                      alt="Download QR"
+                      className="w-full h-full object-contain"
+                    />
                   </div>
+                </div>
                 </motion.div>
               </motion.div>
 
@@ -143,19 +151,33 @@ const Hero = () => {
           </LazySection>
         </div>
 
-        {/* Trust Indicators */}
-        <LazySection className="mt-20">
-          <div className="text-center">
-            <p className="text-gray-600 mb-8">Trusted by leading organizations across Nigeria</p>
-            <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-              {['Sparklab Innovation Hub', 'Kano State Government', 'UNIMAID', 'Green Initiative NG'].map((partner, index) => (
-                <div key={index} className="bg-white px-6 py-3 rounded-lg shadow-sm">
-                  <span className="text-gray-700 font-medium">{partner}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </LazySection>
+{/* Trust Indicator - Official Partner */}
+<LazySection className="mt-20">
+  <div className="text-center">
+    <p className="text-gray-600 mb-8 text-sm uppercase tracking-wide">
+      Official Technology Partner
+    </p>
+
+    <div className="flex justify-center items-center">
+      <a
+        href="https://sparklabhub.com" // Replace with real URL if different
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-4 bg-white px-6 py-4 rounded-2xl shadow-sm hover:shadow-md transition"
+      >
+        <img
+          src="/sparklab.png" // Put the Sparklab logo here in `public/logos/`
+          alt="Sparklab Creativity and Innovation Hub"
+          className="h-10 w-auto object-contain"
+        />
+        <span className="text-gray-800 font-semibold text-base text-left">
+          Sparklab Creativity & Innovation Hub
+        </span>
+      </a>
+    </div>
+  </div>
+</LazySection>
+
       </div>
     </section>
   );

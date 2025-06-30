@@ -80,13 +80,17 @@ const Header = () => {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-3">
-            <motion.button 
-              className="btn-secondary px-5 py-2.5 rounded-xl text-black font-medium shadow-sm"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Download App
-            </motion.button>
+          <motion.a
+            href="https://play.google.com/store/apps/details?id=com.designer.dev23.clenwaveuser"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-secondary px-5 py-2.5 rounded-xl text-black font-medium shadow-sm no-underline"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Download App
+          </motion.a>
+
             <motion.button 
               className="btn-primary px-5 py-2.5 rounded-xl text-white font-medium shadow-sm"
               whileHover={{ scale: 1.05 }}

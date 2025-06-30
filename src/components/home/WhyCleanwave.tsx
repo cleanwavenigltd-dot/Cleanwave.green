@@ -1,5 +1,5 @@
 import React from 'react';
-import { Award, Zap, Shield, Recycle, Heart, Globe, Lightbulb, Target } from 'lucide-react';
+import { Award, Zap, Shield, Recycle, Heart, Globe, Lightbulb, Target, Smartphone } from 'lucide-react';
 import { motion } from 'framer-motion';
 import LazySection from '../LazySection';
 
@@ -209,13 +209,18 @@ const WhyCleanwave = () => {
               Become part of Nigeria's largest recycling community and start making a positive impact today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <motion.button 
-                className="btn-primary px-8 py-4 rounded-xl text-white font-semibold"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                Download App Now
-              </motion.button>
+            <motion.a 
+              href="https://play.google.com/store/apps/details?id=com.designer.dev23.clenwaveuser"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary px-8 py-4 rounded-xl text-white font-semibold flex items-center justify-center space-x-3 shadow-lg no-underline"
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              <Smartphone className="w-5 h-5" />
+              <span>Download App Now</span>
+            </motion.a>
+
               <motion.button 
                 className="btn-secondary px-8 py-4 rounded-xl text-black font-semibold"
                 whileHover={{ scale: 1.05 }}

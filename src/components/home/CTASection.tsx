@@ -3,6 +3,7 @@ import { Smartphone, Users, ExternalLink, QrCode, Download, ArrowRight, Star } f
 import { motion } from 'framer-motion';
 import LazySection from '../LazySection';
 
+
 const CTASection = () => {
 const downloadOptions = [
   {
@@ -11,7 +12,7 @@ const downloadOptions = [
     description: 'Get the full Cleanwave experience on your Android device',
     badge: 'Most Popular',
     color: 'bg-white text-primary',
-    href: 'https://play.google.com/store/apps/details?id=com.cleanwave.app' // Replace with real link
+    href: 'https://play.google.com/store/apps/details?id=com.designer.dev23.clenwaveuser' // Replace with real link
   },
   {
     icon: Users,
@@ -135,14 +136,18 @@ const downloadOptions = [
                 Scan the QR code with your phone camera to download the Cleanwave app instantly and start your recycling journey today.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <motion.button 
-                  className="bg-white text-primary px-6 py-3 rounded-xl font-semibold flex items-center space-x-2"
-                  whileHover={{ scale: 1.05 }}
+                <motion.a 
+                  href="https://play.google.com/store/apps/details?id=com.designer.dev23.clenwaveuser"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white text-primary px-8 py-4 rounded-xl font-semibold flex items-center justify-center space-x-3 shadow-lg no-underline"
+                  whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.98 }}
                 >
-                  <Download className="w-5 h-5" />
-                  <span>Download Now</span>
-                </motion.button>
+                  <Smartphone className="w-5 h-5" />
+                  <span>Download App</span>
+                </motion.a>
+
                 <motion.button 
                   className="border-2 border-white text-white px-6 py-3 rounded-xl font-semibold hover:bg-white hover:text-primary transition-all duration-300"
                   whileHover={{ scale: 1.05 }}
@@ -162,12 +167,14 @@ const downloadOptions = [
                 <QrCode className="w-6 h-6 text-primary" />
                 <span className="text-primary font-semibold text-lg">Scan to Download</span>
               </div>
-              <div className="w-40 h-40 bg-gray-200 rounded-2xl flex items-center justify-center">
-                <div className="text-center">
-                  <QrCode className="w-16 h-16 text-gray-400 mx-auto mb-2" />
-                  <span className="text-gray-500 text-sm">QR Code</span>
-                </div>
+              <div className="w-40 h-40 bg-white rounded-2xl flex items-center justify-center shadow-inner">
+                <img
+                  src="/qr-download.png"
+                  alt="Download Cleanwave App QR"
+                  className="w-36 h-36 object-contain"
+                />
               </div>
+
               <div className="mt-4 text-center">
                 <p className="text-gray-600 text-sm">
                   Compatible with Android 6.0+

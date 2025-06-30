@@ -17,7 +17,7 @@ const Footer = () => {
                     alt="Cleanwave Logo"
                     className="h-7 w-auto max-w-[120px] object-contain"
                   />
-                  
+
               </div>
               <span className="text-2xl font-bold">Cleanwave</span>
             </div>
@@ -25,7 +25,7 @@ const Footer = () => {
               Turning Trash into Treasure – Recycle. Earn. Impact.
             </p>
             <p className="text-xs text-gray-400">
-              Built with ❤️ in Nigeria by Cleanwave Team
+              Built with ❤️ in Nigeria by Sparklab Creativity & Innovation Hub
             </p>
           </div>
 
@@ -80,7 +80,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400 text-sm">
-            © 2024 Cleanwave Nigeria Ltd. All rights reserved.
+            © 2025 Cleanwave Nigeria Ltd. All rights reserved.
           </p>
         </div>
       </div>

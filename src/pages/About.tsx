@@ -164,9 +164,13 @@ const About = () => {
             <h1 className="text-5xl md:text-6xl font-bold text-black mb-8">
               About <span className="gradient-text">Cleanwave</span>
             </h1>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-4">
               We're revolutionizing waste management in Nigeria through innovative technology, community empowerment, and sustainable practices. Our mission is to create a cleaner, more prosperous Nigeria where waste becomes a valuable resource for economic and environmental growth.
             </p>
+            <p className="text-md text-gray-500 max-w-3xl mx-auto">
+              <strong>Cleanwave</strong> is a portfolio startup at <strong><span className="gradient-text">Sparklab Creativity and Innovation Hub</span></strong>, where we receive mentorship, technical support, and strategic guidance to scale our environmental impact.
+            </p>
+
           </motion.div>
         </LazySection>
 
