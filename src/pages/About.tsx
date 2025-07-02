@@ -290,39 +290,334 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {team.map((member, index) => (
+          {/* Executive Leadership */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-black mb-8 text-center">Executive Leadership</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {/* Aminu Balarabe - CEO */}
               <motion.div
-                key={index}
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ delay: index * 0.1 }}
                 className="bg-white p-8 rounded-3xl shadow-sm card-hover"
               >
-                <div className="flex items-start space-x-6">
-                  <div className="w-20 h-20 bg-primary rounded-2xl flex items-center justify-center flex-shrink-0">
-                    <span className="text-white font-bold text-2xl">
-                      {member.name.split(' ').map(n => n[0]).join('')}
-                    </span>
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-black mb-2">{member.name}</h3>
-                    <p className="text-primary font-medium mb-3">{member.role}</p>
-                    <p className="text-gray-600 text-sm mb-4 leading-relaxed">{member.bio}</p>
-                    <div className="flex flex-wrap gap-2">
-                      {member.expertise.map((skill, skillIndex) => (
-                        <span
-                          key={skillIndex}
-                          className="bg-activebg text-primary px-3 py-1 rounded-full text-xs font-medium"
-                        >
-                          {skill}
-                        </span>
-                      ))}
-                    </div>
+                <div className="flex flex-col items-center">
+                  <img 
+                    src="/team/aminu.jpg" 
+                    alt="Aminu Balarabe" 
+                    className="w-32 h-32 rounded-full object-cover mb-4"
+                  />
+                  <h3 className="text-xl font-semibold text-black mb-2 text-center">Aminu Balarabe</h3>
+                  <p className="text-primary font-medium mb-3 text-center">Founder & Chief Executive Officer (CEO)</p>
+                  <p className="text-gray-600 text-sm mb-4 leading-relaxed text-center">
+                    Environmental engineer with 8+ years experience in sustainable development and waste management solutions across Nigeria.
+                  </p>
+                  <div className="flex flex-wrap gap-2 justify-center">
+                    <span className="bg-activebg text-primary px-3 py-1 rounded-full text-xs font-medium">Strategic Leadership</span>
+                    <span className="bg-activebg text-primary px-3 py-1 rounded-full text-xs font-medium">Environmental Policy</span>
+                    <span className="bg-activebg text-primary px-3 py-1 rounded-full text-xs font-medium">Business Development</span>
                   </div>
                 </div>
               </motion.div>
-            ))}
+
+              {/* Mubarak Ibrahim Mandawari - COO */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                className="bg-white p-8 rounded-3xl shadow-sm card-hover"
+              >
+                <div className="flex flex-col items-center">
+                  <img 
+                    src="/team/mubarak-ibrahim.jpg" 
+                    alt="Mubarak Ibrahim Mandawari" 
+                    className="w-32 h-32 rounded-full object-cover mb-4"
+                  />
+                  <h3 className="text-xl font-semibold text-black mb-2 text-center">Mubarak Ibrahim Mandawari</h3>
+                  <p className="text-primary font-medium mb-3 text-center">Chief Operating Officer (COO)</p>
+                  <p className="text-gray-600 text-sm mb-4 leading-relaxed text-center">
+                    Operations expert with extensive experience in scaling sustainable business models in emerging markets.
+                  </p>
+                  <div className="flex flex-wrap gap-2 justify-center">
+                    <span className="bg-activebg text-primary px-3 py-1 rounded-full text-xs font-medium">Operations</span>
+                    <span className="bg-activebg text-primary px-3 py-1 rounded-full text-xs font-medium">Process Optimization</span>
+                    <span className="bg-activebg text-primary px-3 py-1 rounded-full text-xs font-medium">Team Leadership</span>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Ahmad Muhammad Mijin Yawa - CTO */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                className="bg-white p-8 rounded-3xl shadow-sm card-hover"
+              >
+                <div className="flex flex-col items-center">
+                  <img 
+                    src="/team/ahmady.jpg" 
+                    alt="Ahmad Muhammad Mijin Yawa" 
+                    className="w-32 h-32 rounded-full object-cover mb-4"
+                  />
+                  <h3 className="text-xl font-semibold text-black mb-2 text-center">Ahmad Muhammad Mijin Yawa</h3>
+                  <p className="text-primary font-medium mb-3 text-center">Chief Technology Officer (CTO)</p>
+                  <p className="text-gray-600 text-sm mb-4 leading-relaxed text-center">
+                    Technology visionary with expertise in building scalable platforms for environmental solutions.
+                  </p>
+                  <div className="flex flex-wrap gap-2 justify-center">
+                    <span className="bg-activebg text-primary px-3 py-1 rounded-full text-xs font-medium">Software Architecture</span>
+                    <span className="bg-activebg text-primary px-3 py-1 rounded-full text-xs font-medium">Product Development</span>
+                    <span className="bg-activebg text-primary px-3 py-1 rounded-full text-xs font-medium">Technical Strategy</span>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Samuel Makolo - CSO */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                className="bg-white p-8 rounded-3xl shadow-sm card-hover"
+              >
+                <div className="flex flex-col items-center">
+                  <img 
+                    src="/team/samuel.jpg" 
+                    alt="Samuel Makolo" 
+                    className="w-32 h-32 rounded-full object-cover mb-4"
+                  />
+                  <h3 className="text-xl font-semibold text-black mb-2 text-center">Samuel Makolo</h3>
+                  <p className="text-primary font-medium mb-3 text-center">Chief Sustainability Officer (CSO)</p>
+                  <p className="text-gray-600 text-sm mb-4 leading-relaxed text-center">
+                    Environmental scientist focused on circular economy principles and sustainable waste management.
+                  </p>
+                  <div className="flex flex-wrap gap-2 justify-center">
+                    <span className="bg-activebg text-primary px-3 py-1 rounded-full text-xs font-medium">Sustainability</span>
+                    <span className="bg-activebg text-primary px-3 py-1 rounded-full text-xs font-medium">Circular Economy</span>
+                    <span className="bg-activebg text-primary px-3 py-1 rounded-full text-xs font-medium">Environmental Impact</span>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Ahmad Suleiman - CMO */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                className="bg-white p-8 rounded-3xl shadow-sm card-hover"
+              >
+                <div className="flex flex-col items-center">
+                  <img 
+                    src="/team/ahmads.jpg" 
+                    alt="Ahmad Suleiman" 
+                    className="w-32 h-32 rounded-full object-cover mb-4"
+                  />
+                  <h3 className="text-xl font-semibold text-black mb-2 text-center">Ahmad Suleiman</h3>
+                  <p className="text-primary font-medium mb-3 text-center">Chief Marketing Officer (CMO)</p>
+                  <p className="text-gray-600 text-sm mb-4 leading-relaxed text-center">
+                    Marketing strategist specializing in community engagement and digital marketing for social impact.
+                  </p>
+                  <div className="flex flex-wrap gap-2 justify-center">
+                    <span className="bg-activebg text-primary px-3 py-1 rounded-full text-xs font-medium">Brand Strategy</span>
+                    <span className="bg-activebg text-primary px-3 py-1 rounded-full text-xs font-medium">Digital Marketing</span>
+                    <span className="bg-activebg text-primary px-3 py-1 rounded-full text-xs font-medium">Community Engagement</span>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+
+          {/* Senior Management */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-black mb-8 text-center">Senior Management</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Isaac John */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                className="bg-white p-8 rounded-3xl shadow-sm card-hover"
+              >
+                <div className="flex flex-col items-center">
+                  <img 
+                    src="/team/isaac.jpg" 
+                    alt="Isaac John" 
+                    className="w-32 h-32 rounded-full object-cover mb-4"
+                  />
+                  <h3 className="text-xl font-semibold text-black mb-2 text-center">Isaac John</h3>
+                  <p className="text-primary font-medium mb-3 text-center">Head of Partnerships & Strategic Collaborations</p>
+                  <p className="text-gray-600 text-sm mb-4 leading-relaxed text-center">
+                    Partnership expert with a track record of building strategic alliances for social impact.
+                  </p>
+                  <div className="flex flex-wrap gap-2 justify-center">
+                    <span className="bg-activebg text-primary px-3 py-1 rounded-full text-xs font-medium">Partnerships</span>
+                    <span className="bg-activebg text-primary px-3 py-1 rounded-full text-xs font-medium">Stakeholder Engagement</span>
+                    <span className="bg-activebg text-primary px-3 py-1 rounded-full text-xs font-medium">Business Development</span>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Adegbite Adejoju Pelumi */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                className="bg-white p-8 rounded-3xl shadow-sm card-hover"
+              >
+                <div className="flex flex-col items-center">
+                  <img 
+                    src="/team/ade.jpg" 
+                    alt="Adegbite Adejoju Pelumi" 
+                    className="w-32 h-32 rounded-full object-cover mb-4"
+                  />
+                  <h3 className="text-xl font-semibold text-black mb-2 text-center">Adegbite Adejoju Pelumi</h3>
+                  <p className="text-primary font-medium mb-3 text-center">Business Growth & Research Manager</p>
+                  <p className="text-gray-600 text-sm mb-4 leading-relaxed text-center">
+                    Research and growth specialist focused on scaling sustainable business models.
+                  </p>
+                  <div className="flex flex-wrap gap-2 justify-center">
+                    <span className="bg-activebg text-primary px-3 py-1 rounded-full text-xs font-medium">Market Research</span>
+                    <span className="bg-activebg text-primary px-3 py-1 rounded-full text-xs font-medium">Business Strategy</span>
+                    <span className="bg-activebg text-primary px-3 py-1 rounded-full text-xs font-medium">Growth Hacking</span>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+
+          {/* Mid-Level Management */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-black mb-8 text-center">Mid-Level Management</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Umar Mustapha Sani */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                className="bg-white p-8 rounded-3xl shadow-sm card-hover"
+              >
+                <div className="flex flex-col items-center">
+                  <img 
+                    src="/team/umarmustapha.jpg" 
+                    alt="Umar Mustapha Sani" 
+                    className="w-32 h-32 rounded-full object-cover mb-4"
+                  />
+                  <h3 className="text-xl font-semibold text-black mb-2 text-center">Umar Mustapha Sani</h3>
+                  <p className="text-primary font-medium mb-3 text-center">Field Operations Coordinator (Agent Oversight)</p>
+                  <p className="text-gray-600 text-sm mb-4 leading-relaxed text-center">
+                    Field operations specialist ensuring smooth operations across our agent network.
+                  </p>
+                  <div className="flex flex-wrap gap-2 justify-center">
+                    <span className="bg-activebg text-primary px-3 py-1 rounded-full text-xs font-medium">Field Operations</span>
+                    <span className="bg-activebg text-primary px-3 py-1 rounded-full text-xs font-medium">Logistics</span>
+                    <span className="bg-activebg text-primary px-3 py-1 rounded-full text-xs font-medium">Team Management</span>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Hauwa Umar Abdullahi */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                className="bg-white p-8 rounded-3xl shadow-sm card-hover"
+              >
+                <div className="flex flex-col items-center">
+                  <img 
+                    src="/team/hauwaumar.jpg" 
+                    alt="Hauwa Umar Abdullahi" 
+                    className="w-32 h-32 rounded-full object-cover mb-4"
+                  />
+                  <h3 className="text-xl font-semibold text-black mb-2 text-center">Hauwa Umar Abdullahi</h3>
+                  <p className="text-primary font-medium mb-3 text-center">Administrative Officer</p>
+                  <p className="text-gray-600 text-sm mb-4 leading-relaxed text-center">
+                    Ensuring organizational efficiency through effective administrative systems.
+                  </p>
+                  <div className="flex flex-wrap gap-2 justify-center">
+                    <span className="bg-activebg text-primary px-3 py-1 rounded-full text-xs font-medium">Administration</span>
+                    <span className="bg-activebg text-primary px-3 py-1 rounded-full text-xs font-medium">Office Management</span>
+                    <span className="bg-activebg text-primary px-3 py-1 rounded-full text-xs font-medium">Coordination</span>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+
+          {/* Marketing & Communications */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-black mb-8 text-center">Marketing & Communications</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Amina Jabo */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                className="bg-white p-8 rounded-3xl shadow-sm card-hover"
+              >
+                <div className="flex flex-col items-center">
+                  <img 
+                    src="/team/aminajabo.jpg" 
+                    alt="Amina Jabo" 
+                    className="w-32 h-32 rounded-full object-cover mb-4"
+                  />
+                  <h3 className="text-xl font-semibold text-black mb-2 text-center">Amina Jabo</h3>
+                  <p className="text-primary font-medium mb-3 text-center">Assistant Marketing Officer & Social Media Manager</p>
+                  <p className="text-gray-600 text-sm mb-4 leading-relaxed text-center">
+                    Digital marketing specialist managing our online presence and community engagement.
+                  </p>
+                  <div className="flex flex-wrap gap-2 justify-center">
+                    <span className="bg-activebg text-primary px-3 py-1 rounded-full text-xs font-medium">Social Media</span>
+                    <span className="bg-activebg text-primary px-3 py-1 rounded-full text-xs font-medium">Content Creation</span>
+                    <span className="bg-activebg text-primary px-3 py-1 rounded-full text-xs font-medium">Digital Marketing</span>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Ummuraatu */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                className="bg-white p-8 rounded-3xl shadow-sm card-hover"
+              >
+                <div className="flex flex-col items-center">
+                  <img 
+                    src="/team/ummuratu.jpg" 
+                    alt="Ummuraatu" 
+                    className="w-32 h-32 rounded-full object-cover mb-4"
+                  />
+                  <h3 className="text-xl font-semibold text-black mb-2 text-center">Ummuraatu</h3>
+                  <p className="text-primary font-medium mb-3 text-center">Graphics Designer</p>
+                  <p className="text-gray-600 text-sm mb-4 leading-relaxed text-center">
+                    Creative designer producing visual content that communicates our brand effectively.
+                  </p>
+                  <div className="flex flex-wrap gap-2 justify-center">
+                    <span className="bg-activebg text-primary px-3 py-1 rounded-full text-xs font-medium">Graphic Design</span>
+                    <span className="bg-activebg text-primary px-3 py-1 rounded-full text-xs font-medium">Brand Identity</span>
+                    <span className="bg-activebg text-primary px-3 py-1 rounded-full text-xs font-medium">Visual Communication</span>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+
+          {/* Sustainability Unit */}
+          <div>
+            <h3 className="text-2xl font-bold text-black mb-8 text-center">Sustainability Unit</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+              {/* Hauwa Saad */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                className="bg-white p-8 rounded-3xl shadow-sm card-hover"
+              >
+                <div className="flex flex-col items-center">
+                  <img 
+                    src="/team/hauwasaad.jpg" 
+                    alt="Hauwa Saad" 
+                    className="w-32 h-32 rounded-full object-cover mb-4"
+                  />
+                  <h3 className="text-xl font-semibold text-black mb-2 text-center">Hauwa Saad</h3>
+                  <p className="text-primary font-medium mb-3 text-center">Assistant Sustainability Officer</p>
+                  <p className="text-gray-600 text-sm mb-4 leading-relaxed text-center">
+                    Supporting sustainability initiatives and environmental impact assessments.
+                  </p>
+                  <div className="flex flex-wrap gap-2 justify-center">
+                    <span className="bg-activebg text-primary px-3 py-1 rounded-full text-xs font-medium">Sustainability</span>
+                    <span className="bg-activebg text-primary px-3 py-1 rounded-full text-xs font-medium">Environmental Research</span>
+                    <span className="bg-activebg text-primary px-3 py-1 rounded-full text-xs font-medium">Community Engagement</span>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
           </div>
         </LazySection>
 
