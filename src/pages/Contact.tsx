@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Instagram, Facebook, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Instagram, Facebook, Linkedin } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -20,6 +20,13 @@ const Contact = () => {
     e.preventDefault();
     // Handle form submission
     console.log('Contact form submission:', formData);
+  };
+
+  // Social media links
+  const socialLinks = {
+    instagram: 'https://www.instagram.com/cleanwave_ng?igsh=MWg0cm51dGRsbnRq&utm_source=qr',
+    linkedin: 'https://www.linkedin.com/company/cleanwave-recycling-nigeria-limited/',
+    facebook: 'https://www.facebook.com/share/15zhT8kHqd/?mibextid=wwXIfr'
   };
 
   return (
@@ -136,22 +143,31 @@ const Contact = () => {
               <h2 className="text-2xl font-bold text-black mb-6">Follow Us</h2>
               <div className="flex space-x-4">
                 <a
-                  href="#"
+                  href={socialLinks.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-activebg p-4 rounded-lg hover:bg-primary hover:text-white transition-all duration-300"
+                  aria-label="Instagram"
                 >
                   <Instagram className="w-6 h-6" />
                 </a>
                 <a
-                  href="#"
+                  href={socialLinks.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-activebg p-4 rounded-lg hover:bg-primary hover:text-white transition-all duration-300"
+                  aria-label="Facebook"
                 >
                   <Facebook className="w-6 h-6" />
                 </a>
                 <a
-                  href="#"
+                  href={socialLinks.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-activebg p-4 rounded-lg hover:bg-primary hover:text-white transition-all duration-300"
+                  aria-label="LinkedIn"
                 >
-                  <Twitter className="w-6 h-6" />
+                  <Linkedin className="w-6 h-6" />
                 </a>
               </div>
             </div>

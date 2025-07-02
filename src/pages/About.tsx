@@ -31,7 +31,7 @@ const About = () => {
     }
   ];
 
-  const milestones = [
+const milestones = [
     {
       date: 'February 2024',
       title: 'Company Founded',
@@ -45,30 +45,24 @@ const About = () => {
       icon: Users
     },
     {
-      date: 'May 2024',
+      date: 'October 2024',
       title: 'Pilot Program Launch',
       description: 'Successful pilot program launched in 5 communities across Kano State with 500+ initial users.',
       icon: Target
     },
     {
-      date: 'August 2024',
+      date: 'January 2025',
       title: 'Agent Network Expansion',
       description: 'Recruited and trained 100+ agents across Northern Nigeria, establishing our community network.',
       icon: TrendingUp
     },
     {
-      date: 'October 2024',
+      date: 'July 2025',
       title: 'Technology Platform Launch',
       description: 'Full-featured mobile app and web platform launched with advanced recycling tracking capabilities.',
       icon: Globe
-    },
-    {
-      date: 'December 2024',
-      title: 'Major Milestone',
-      description: 'Reached 10,000+ active users and processed over 50,000kg of recyclable materials.',
-      icon: Award
     }
-  ];
+    ]
 
   const values = [
     {
@@ -124,32 +118,26 @@ const About = () => {
     }
   ];
 
-  const partnerships = [
-    {
-      name: 'Sparklab Innovation Hub',
-      type: 'Technology Partner',
-      description: 'Providing technical development support, mentorship, and access to innovation resources.',
-      status: 'Active'
-    },
-    {
-      name: 'Kano State Government',
-      type: 'Government Partnership',
-      description: 'Collaboration on waste management policy and large-scale implementation programs.',
-      status: 'In Discussion'
-    },
-    {
-      name: 'University of Maiduguri',
-      type: 'Academic Partner',
-      description: 'Research collaboration on sustainable waste management and environmental impact studies.',
-      status: 'Planned'
-    },
-    {
-      name: 'Green Initiative Nigeria',
-      type: 'NGO Partnership',
-      description: 'Joint environmental education programs and community outreach initiatives.',
-      status: 'Active'
-    }
-  ];
+const partnerships = [
+  {
+    name: 'Sparklab Innovation Hub',
+    type: 'Technology Partner',
+    description: 'Providing technical development support, mentorship, and access to innovation resources.',
+    status: 'Active'
+  },
+  {
+    name: 'Sedae Kano State',
+    type: 'Government Partnership',
+    description: 'Collaboration on waste management policy and large-scale implementation programs in Kano State.',
+    status: 'In Discussion'
+  },
+  {
+    name: 'Clean Tech Hub',
+    type: 'Innovation Partner',
+    description: 'Exploring joint initiatives in clean technology and sustainable waste management solutions.',
+    status: 'In Discussion'
+  }
+];
 
   return (
     <div className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
@@ -710,6 +698,7 @@ const About = () => {
                 className="btn-primary px-8 py-4 rounded-xl text-white font-semibold"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
+                onClick={() => window.location.href = '/contact'}
               >
                 Contact Us for Partnerships
               </motion.button>
