@@ -341,7 +341,7 @@ const partnerships = [
                 <div className="flex flex-col items-center">
                   <img 
                     src="/team/ahmady.jpg" 
-                    alt="Ahmad Muhammad Mijin Yawa" 
+                    alt="Ahmad Muhammad Mijinyawa" 
                     className="w-32 h-32 rounded-full object-cover mb-4"
                   />
                   <h3 className="text-xl font-semibold text-black mb-2 text-center">Ahmad Muhammad Mijin Yawa</h3>
@@ -562,7 +562,7 @@ const partnerships = [
                     alt="Ummuraatu" 
                     className="w-32 h-32 rounded-full object-cover mb-4"
                   />
-                  <h3 className="text-xl font-semibold text-black mb-2 text-center">Ummuraatu</h3>
+                  <h3 className="text-xl font-semibold text-black mb-2 text-center">Ummuraatu Muhammadgit </h3>
                   <p className="text-primary font-medium mb-3 text-center">Graphics Designer</p>
                   <p className="text-gray-600 text-sm mb-4 leading-relaxed text-center">
                     Creative designer producing visual content that communicates our brand effectively.
